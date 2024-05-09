@@ -1,0 +1,66 @@
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 11
+Not Found: /docs
+"GET /docs HTTP/1.1" 404 2418
+"GET /about/ HTTP/1.1" 200 32
+"GET / HTTP/1.1" 200 11
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 11
+C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\homeapp\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accesed
+"GET / HTTP/1.1" 200 11
+Errar in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py", line 19, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /about/ HTTP/1.1" 200 7
+C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py", line 19, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /about/ HTTP/1.1" 200 7
+Not Found: /1/0
+"GET /1/0 HTTP/1.1" 404 2415
+Index page accesed
+"GET / HTTP/1.1" 200 11
+Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py", line 19, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+"GET /about/ HTTP/1.1" 200 7
+C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\homeapp\settings.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\homeapp\settings.py changed, reloading.
+INFO 2024-05-09 17:28:57,198 autoreload 7580 12652 Watching for file changes with StatReloader
+ERROR 2024-05-09 17:28:59,723 views 7580 3448 Error in about page: division by zero
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py", line 19, in about
+    result = 1 / 0
+             ~~^~~
+ZeroDivisionError: division by zero
+INFO 2024-05-09 17:28:59,731 basehttp 7580 3448 "GET /about/ HTTP/1.1" 200 7
+INFO 2024-05-09 17:29:04,300 views 7580 3448 Index page accesed
+INFO 2024-05-09 17:29:04,300 basehttp 7580 3448 "GET / HTTP/1.1" 200 11
+INFO 2024-05-09 17:30:42,049 autoreload 7580 12652 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py changed, reloading.
+INFO 2024-05-09 17:30:42,684 autoreload 17224 17220 Watching for file changes with StatReloader
+INFO 2024-05-09 17:32:23,655 autoreload 17224 17220 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py changed, reloading.
+INFO 2024-05-09 17:32:24,295 autoreload 7424 6884 Watching for file changes with StatReloader
+INFO 2024-05-09 17:32:27,038 views 7424 9708 Index page accesed
+INFO 2024-05-09 17:32:27,038 basehttp 7424 9708 "GET / HTTP/1.1" 200 20
+INFO 2024-05-09 17:35:14,582 autoreload 7424 6884 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\myapp\views.py changed, reloading.
+INFO 2024-05-09 17:35:15,284 autoreload 18792 8760 Watching for file changes with StatReloader
+INFO 2024-05-09 17:35:16,780 views 18792 5272 Index page accesed
+INFO 2024-05-09 17:35:16,781 basehttp 18792 5272 "GET / HTTP/1.1" 200 78
