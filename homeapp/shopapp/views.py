@@ -1,10 +1,14 @@
-import datetime
+import logging
 import random
-
-from django.shortcuts import render
+from datetime import timedelta
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
+
+# from .forms import OrderAdd
 from .models import Client, Product, Order
-from django.db.models import F
+from django.utils import timezone
+
+logger = logging.getLogger(__name__)
 
 
 def index(response):
@@ -21,18 +25,49 @@ def add_client(request):
 
 def add_product(request):
     for i in range(50):
-        product = Product(product_name=f'name{i}', product_description=f'Товар № {1 + i}', price=random.random() * 100,
+        product = Product(name=f'name{i}', description=f'Товар № {1 + i}', price=random.random() * 100,
                           quantity=random.randint(1, 50), data_enter='2024-05-12')
         product.save()
     return HttpResponse("Товары добавлены")
 
 
-def add_order(request):
-    for i in range(20):
-        # order = Order(customer=random.randint(1, 51), products=random.randint(1, 51), quantity=random.randint(1, 50),
-        #               date_ordered='2024-05-12')
-        order = Order(customer=Client.objects.filter(id=random.randint(1, 51)), products=Product.objects.filter(id=random.randint(1, 51)),
-                      quantity=random.randint(1, 50),
-                      date_ordered='2024-05-12')
-        order.save()
-    return HttpResponse("Заказы добавлены")
+"""def add_order(request):
+    if request.method == 'POST':
+        form = OrderAdd(request.POST)
+        if form.is_valid():
+            customer = form.cleaned_data['customer']
+            product = form.cleaned_data['product']
+            quantity = form.cleaned_data['quantity']
+            total_price = form.cleaned_data['total_price']
+            order = Order(customer=customer, quantity=quantity, total_price=total_price)
+            # form.save()
+            order.save()
+            order.product.add(product)
+            logger.info(f'Получили {customer=}, {product=}, {quantity=}, {total_price=}.')
+            return redirect("/")
+    else:
+        form = OrderAdd()
+    return render(request, 'shopapp/add_orders.html', {'form': form})"""
+
+
+
+def client_orders(request, client_id):
+    client = Client.objects.get(pk=client_id)
+
+    # За последние 7 дней
+    last_7_days = timezone.now() - timedelta(days=7)
+    client_orders_last_7_days = Product.objects.filter(order__client=client, order__order_date__gte=last_7_days).distinct()
+
+    # За последние 30 дней
+    last_30_days = timezone.now() - timedelta(days=30)
+    client_orders_last_30_days = Product.objects.filter(order__client=client, order__order_date__gte=last_30_days).distinct()
+
+    # За последние 365 дней
+    last_365_days = timezone.now() - timedelta(days=365)
+    client_orders_last_365_days = Product.objects.filter(order__client=client, order__order_date__gte=last_365_days).distinct()
+
+    return render(request, 'hw3_app/client_orders.html', {
+        'client_orders_last_7_days': client_orders_last_7_days,
+        'client_orders_last_30_days': client_orders_last_30_days,
+        'client_orders_last_365_days': client_orders_last_365_days,
+    })
