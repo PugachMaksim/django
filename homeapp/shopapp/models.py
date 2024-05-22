@@ -44,6 +44,7 @@ class Client(models.Model):
 class Product(models.Model):
     name = models.CharField(blank=False, max_length=30)
     description = models.TextField(blank=False, default=None)
+    image = models.ImageField(upload_to='product_images', default=None)
     price = models.DecimalField(blank=False, default=0, decimal_places=2, max_digits=10)
     quantity = models.IntegerField(blank=False, default=0)
     data_enter = models.DateTimeField(blank=False)
@@ -53,16 +54,15 @@ class Product(models.Model):
 
 
 class Order(models.Model):
-    customer = models.ForeignKey('Client', on_delete=models.CASCADE)
-    products = models.ManyToManyField('Product', related_name="orders")
+    customer = models.ForeignKey(Client, on_delete=models.CASCADE)
+    products = models.ManyToManyField(Product)
     quantity = models.IntegerField(blank=False, default=0)
     date_ordered = models.DateTimeField(auto_now_add=True)
-    total_price = models.DecimalField(max_digits=8, decimal_places=2)
+    total_price = models.DecimalField(blank=False, default=0, decimal_places=2, max_digits=10)
 
-    # def calculate_total_amount(self):
-    #     total = sum(product.price * product.quantity for product in self.products.all())
-    #     self.total_price = total
-    #     self.save()
-    #
-    # def __str__(self):
-    #     return f"Order {self.id} by {self.customer.name}"
+    # def _get_product_cost(self):
+    #     return self.products.price * self.quantity
+    def calc_total_price(self, quantity=quantity):
+        total = sum(product.price * quantity for product in self.products.all())
+        self.total_price = total
+        self.save()

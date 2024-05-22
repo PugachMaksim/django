@@ -2433,3 +2433,1519 @@ INFO 2024-05-19 23:17:12,785 autoreload 12432 14768 Watching for file changes wi
 INFO 2024-05-19 23:18:28,200 autoreload 11692 4732 Watching for file changes with StatReloader
 INFO 2024-05-19 23:19:12,377 autoreload 11692 4732 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
 INFO 2024-05-19 23:19:13,051 autoreload 12224 13136 Watching for file changes with StatReloader
+INFO 2024-05-21 19:47:13,136 autoreload 18272 14120 Watching for file changes with StatReloader
+INFO 2024-05-21 19:50:27,231 autoreload 18272 14120 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 19:50:28,235 autoreload 8544 10724 Watching for file changes with StatReloader
+INFO 2024-05-21 19:51:13,154 autoreload 8544 10724 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-21 19:51:14,147 autoreload 17168 10744 Watching for file changes with StatReloader
+INFO 2024-05-21 19:52:17,489 autoreload 6300 19368 Watching for file changes with StatReloader
+WARNING 2024-05-21 19:52:23,800 log 6300 17560 Not Found: /
+WARNING 2024-05-21 19:52:23,802 basehttp 6300 17560 "GET / HTTP/1.1" 404 2274
+WARNING 2024-05-21 19:52:24,195 log 6300 17560 Not Found: /favicon.ico
+WARNING 2024-05-21 19:52:24,196 basehttp 6300 17560 "GET /favicon.ico HTTP/1.1" 404 2325
+INFO 2024-05-21 19:52:30,631 basehttp 6300 15448 "GET /shopapp/ HTTP/1.1" 200 31
+ERROR 2024-05-21 19:52:37,521 log 6300 15448 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 51, in add_order
+    return render(request, 'shopapp/add_orders.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-05-21 19:52:37,535 basehttp 6300 15448 "GET /shopapp/order/add/ HTTP/1.1" 500 133449
+INFO 2024-05-21 19:56:47,720 autoreload 6300 19368 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\homeapp\settings.py changed, reloading.
+INFO 2024-05-21 19:59:09,643 autoreload 12740 4904 Watching for file changes with StatReloader
+ERROR 2024-05-21 19:59:12,656 log 12740 13160 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 51, in add_order
+    return render(request, 'shopapp/add_orders.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+ERROR 2024-05-21 19:59:12,662 basehttp 12740 13160 "GET /shopapp/order/add/ HTTP/1.1" 500 134408
+ERROR 2024-05-21 20:03:48,638 log 12740 13160 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: shopapp_product.image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 51, in add_order
+    return render(request, 'shopapp/add_orders.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 909, in _resolve_lookup
+    current = current()
+              ^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\utils.py", line 87, in as_p
+    return self.render(self.template_name_p)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\utils.py", line 55, in render
+    return mark_safe(renderer.render(template, context))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\renderers.py", line 29, in render
+    return template.render(context, request=request).strip()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1065, in render
+    return render_value_in_context(output, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\base.py", line 1042, in render_value_in_context
+    value = str(value)
+            ^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\utils.py", line 79, in __str__
+    return self.as_widget()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\boundfield.py", line 108, in as_widget
+    return widget.render(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\widgets.py", line 278, in render
+    context = self.get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\widgets.py", line 764, in get_context
+    context = super().get_context(name, value, attrs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\widgets.py", line 715, in get_context
+    context["widget"]["optgroups"] = self.optgroups(
+                                     ^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\widgets.py", line 655, in optgroups
+    for index, (option_value, option_label) in enumerate(self.choices):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\models.py", line 1422, in __iter__
+    for obj in queryset:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 518, in _iterator
+    yield from iterable
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: shopapp_product.image
+ERROR 2024-05-21 20:03:48,659 basehttp 12740 13160 "GET /shopapp/order/add/ HTTP/1.1" 500 326167
+INFO 2024-05-21 20:04:59,490 autoreload 12740 4904 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\forms.py changed, reloading.
+INFO 2024-05-21 20:05:00,717 autoreload 18100 10604 Watching for file changes with StatReloader
+INFO 2024-05-21 20:25:43,235 autoreload 10288 1188 Watching for file changes with StatReloader
+INFO 2024-05-21 20:25:47,876 basehttp 10288 9936 "GET /shopapp/order/add/ HTTP/1.1" 200 4873
+ERROR 2024-05-21 20:26:06,594 log 10288 9936 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 39, in add_order
+    product = form.cleaned_data['product']
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'product'
+ERROR 2024-05-21 20:26:06,602 basehttp 10288 9936 "POST /shopapp/order/add/ HTTP/1.1" 500 68159
+INFO 2024-05-21 20:30:28,672 autoreload 10288 1188 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\forms.py changed, reloading.
+INFO 2024-05-21 20:30:30,237 autoreload 8292 17784 Watching for file changes with StatReloader
+ERROR 2024-05-21 20:30:31,491 log 8292 9064 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 39, in add_order
+    product = form.cleaned_data['product']
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'product'
+ERROR 2024-05-21 20:30:31,498 basehttp 8292 9064 "POST /shopapp/order/add/ HTTP/1.1" 500 68168
+INFO 2024-05-21 20:30:35,450 basehttp 8292 9064 "GET /shopapp/order/add/ HTTP/1.1" 200 4707
+ERROR 2024-05-21 20:30:41,315 log 8292 9064 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 39, in add_order
+    product = form.cleaned_data['product']
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'product'
+ERROR 2024-05-21 20:30:41,325 basehttp 8292 9064 "POST /shopapp/order/add/ HTTP/1.1" 500 68032
+INFO 2024-05-21 20:33:32,954 autoreload 8292 17784 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 20:33:34,629 autoreload 13728 1668 Watching for file changes with StatReloader
+ERROR 2024-05-21 20:33:35,789 log 13728 10280 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 39, in add_order
+    product = form.cleaned_data['product']
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'product'
+ERROR 2024-05-21 20:33:35,789 basehttp 13728 10280 "POST /shopapp/order/add/ HTTP/1.1" 500 68006
+INFO 2024-05-21 20:38:46,370 autoreload 13728 1668 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 20:38:47,520 autoreload 15372 17016 Watching for file changes with StatReloader
+INFO 2024-05-21 20:41:33,259 autoreload 15372 17016 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 20:41:34,262 autoreload 19024 1096 Watching for file changes with StatReloader
+INFO 2024-05-21 20:44:13,983 autoreload 19024 1096 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 20:44:15,180 autoreload 10424 11468 Watching for file changes with StatReloader
+ERROR 2024-05-21 20:44:20,119 log 10424 1160 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 39, in add_order
+    product = form.cleaned_data['product']
+              ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'product'
+ERROR 2024-05-21 20:44:20,119 basehttp 10424 1160 "POST /shopapp/order/add/ HTTP/1.1" 500 68002
+INFO 2024-05-21 20:45:27,372 autoreload 10424 11468 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 20:45:28,856 autoreload 16444 18548 Watching for file changes with StatReloader
+ERROR 2024-05-21 20:45:29,411 log 16444 12664 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 42, in add_order
+    order = Order(customer=customer, quantity=quantity, total_price=Order.calculate_total_amount())
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Order.calculate_total_amount() missing 1 required positional argument: 'self'
+ERROR 2024-05-21 20:45:29,416 basehttp 16444 12664 "POST /shopapp/order/add/ HTTP/1.1" 500 68870
+INFO 2024-05-21 20:48:07,382 autoreload 16444 18548 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 20:48:08,540 autoreload 2460 8308 Watching for file changes with StatReloader
+ERROR 2024-05-21 20:48:10,040 log 2460 18164 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 42, in add_order
+    order = Order(customer=customer, quantity=quantity, total_price=Order.calculate_total_amount(product))
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py", line 69, in calculate_total_amount
+    total = sum(product.price * product.quantity for product in self.products.all())
+                                                                ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+ERROR 2024-05-21 20:48:10,048 basehttp 2460 18164 "POST /shopapp/order/add/ HTTP/1.1" 500 72441
+INFO 2024-05-21 20:48:26,521 autoreload 2460 8308 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 20:48:27,741 autoreload 7488 18492 Watching for file changes with StatReloader
+ERROR 2024-05-21 20:48:28,968 log 7488 5156 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 42, in add_order
+    order = Order(customer=customer, quantity=quantity, total_price=Order.calculate_total_amount(product.price))
+                                                                                                 ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'price'
+ERROR 2024-05-21 20:48:28,971 basehttp 7488 5156 "POST /shopapp/order/add/ HTTP/1.1" 500 68850
+INFO 2024-05-21 20:52:45,913 autoreload 7488 18492 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 20:52:47,349 autoreload 5232 4264 Watching for file changes with StatReloader
+ERROR 2024-05-21 20:52:48,260 log 5232 1616 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 42, in add_order
+    order = Order(customer=customer, quantity=quantity, total_price=Order.calculate_total_amount(product.price))
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Order' has no attribute 'calculate_total_amount'
+ERROR 2024-05-21 20:52:48,266 basehttp 5232 1616 "POST /shopapp/order/add/ HTTP/1.1" 500 68898
+INFO 2024-05-21 21:02:12,962 autoreload 5232 4264 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 21:02:14,650 autoreload 15436 16980 Watching for file changes with StatReloader
+INFO 2024-05-21 21:03:29,883 autoreload 15436 16980 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 21:03:31,462 autoreload 12524 4112 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:03:41,446 log 12524 13668 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 42, in add_order
+    order = Order(customer=customer, quantity=quantity, total_price=Order.calculate_total_amount(product.price))
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'Order' has no attribute 'calculate_total_amount'
+ERROR 2024-05-21 21:03:41,458 basehttp 12524 13668 "POST /shopapp/order/add/ HTTP/1.1" 500 68898
+INFO 2024-05-21 21:04:20,598 autoreload 12524 4112 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:04:21,834 autoreload 2128 19444 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:04:32,986 log 2128 4008 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: shopapp_order.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 44, in add_order
+    order.save()
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: shopapp_order.total_price
+ERROR 2024-05-21 21:04:33,003 basehttp 2128 4008 "POST /shopapp/order/add/ HTTP/1.1" 500 150154
+INFO 2024-05-21 21:08:15,394 basehttp 2128 4008 "GET /shopapp/order/add/ HTTP/1.1" 200 4707
+ERROR 2024-05-21 21:08:21,947 log 2128 4008 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: shopapp_order.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 44, in add_order
+    order.save()
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: shopapp_order.total_price
+ERROR 2024-05-21 21:08:21,952 basehttp 2128 4008 "POST /shopapp/order/add/ HTTP/1.1" 500 150154
+INFO 2024-05-21 21:14:56,261 autoreload 2128 19444 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 21:14:57,533 autoreload 12100 13072 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:14:59,181 log 12100 16832 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: shopapp_order.total_price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 44, in add_order
+    order.save()
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: NOT NULL constraint failed: shopapp_order.total_price
+ERROR 2024-05-21 21:14:59,197 basehttp 12100 16832 "POST /shopapp/order/add/ HTTP/1.1" 500 150154
+INFO 2024-05-21 21:16:41,776 autoreload 12100 13072 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 21:16:42,935 autoreload 16064 16124 Watching for file changes with StatReloader
+INFO 2024-05-21 21:27:23,653 autoreload 16064 16124 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 21:27:24,943 autoreload 13384 5092 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:27:37,682 log 13384 11988 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 44, in add_order
+    order.save()
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-05-21 21:27:37,702 basehttp 13384 11988 "POST /shopapp/order/add/ HTTP/1.1" 500 128275
+ERROR 2024-05-21 21:27:52,176 log 13384 11988 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 44, in add_order
+    order.save()
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-05-21 21:27:52,179 basehttp 13384 11988 "POST /shopapp/order/add/ HTTP/1.1" 500 128275
+INFO 2024-05-21 21:27:54,407 basehttp 13384 11988 "GET /shopapp/order/add/ HTTP/1.1" 200 4707
+ERROR 2024-05-21 21:28:06,459 log 13384 11988 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 44, in add_order
+    order.save()
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-05-21 21:28:06,472 basehttp 13384 11988 "POST /shopapp/order/add/ HTTP/1.1" 500 128272
+ERROR 2024-05-21 21:29:28,640 log 13384 11988 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 45, in add_order
+    prod = get_object_or_404(Product, product=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'product' into field. Choices are: data_enter, description, id, image, name, order, price, quantity
+ERROR 2024-05-21 21:29:28,659 basehttp 13384 11988 "POST /shopapp/order/add/ HTTP/1.1" 500 121410
+INFO 2024-05-21 21:33:08,826 autoreload 13384 5092 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:33:10,269 autoreload 316 4812 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:33:13,480 log 316 10756 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 45, in add_order
+    prod = get_object_or_404(Product, name=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 360, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR 2024-05-21 21:33:13,481 basehttp 316 10756 "POST /shopapp/order/add/ HTTP/1.1" 500 126319
+INFO 2024-05-21 21:39:34,345 autoreload 316 4812 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:39:35,605 autoreload 4052 16308 Watching for file changes with StatReloader
+INFO 2024-05-21 21:40:55,328 autoreload 4052 16308 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:40:56,467 autoreload 7672 16676 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:41:00,598 log 7672 7872 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(product=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'product' into field. Choices are: data_enter, description, id, image, name, order, price, quantity
+ERROR 2024-05-21 21:41:00,606 basehttp 7672 7872 "POST /shopapp/order/add/ HTTP/1.1" 500 120882
+INFO 2024-05-21 21:41:35,996 autoreload 7672 16676 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:41:37,144 autoreload 16260 1160 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:41:42,554 log 16260 16056 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(id=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 360, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR 2024-05-21 21:41:42,554 basehttp 16260 16056 "POST /shopapp/order/add/ HTTP/1.1" 500 125790
+INFO 2024-05-21 21:41:53,899 autoreload 16260 1160 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:41:55,000 autoreload 17140 14228 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:41:56,365 log 17140 15444 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(name=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 360, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR 2024-05-21 21:41:56,382 basehttp 17140 15444 "POST /shopapp/order/add/ HTTP/1.1" 500 125791
+INFO 2024-05-21 21:44:17,993 autoreload 17140 14228 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:44:19,173 autoreload 2612 3160 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:44:21,523 log 2612 12428 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(id=product.id)
+                                  ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2024-05-21 21:44:21,523 basehttp 2612 12428 "POST /shopapp/order/add/ HTTP/1.1" 500 68764
+INFO 2024-05-21 21:46:55,195 autoreload 2612 3160 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:46:56,354 autoreload 12888 2368 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:46:59,155 log 12888 13432 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(name=product.name)
+                                    ^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'name'
+ERROR 2024-05-21 21:46:59,155 basehttp 12888 13432 "POST /shopapp/order/add/ HTTP/1.1" 500 68789
+INFO 2024-05-21 21:50:25,519 autoreload 12888 2368 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:50:26,867 autoreload 8144 18228 Watching for file changes with StatReloader
+INFO 2024-05-21 21:50:29,698 basehttp 8144 16904 "GET /shopapp/order/add/ HTTP/1.1" 200 4707
+ERROR 2024-05-21 21:50:37,430 log 8144 16904 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(id=product.id)
+                                  ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2024-05-21 21:50:37,436 basehttp 8144 16904 "POST /shopapp/order/add/ HTTP/1.1" 500 68768
+INFO 2024-05-21 21:54:17,499 autoreload 8144 18228 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:54:18,834 autoreload 7212 556 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:54:19,681 log 7212 15288 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(product=product.id)
+                                       ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2024-05-21 21:54:19,681 basehttp 7212 15288 "POST /shopapp/order/add/ HTTP/1.1" 500 68788
+INFO 2024-05-21 21:58:28,790 autoreload 7212 556 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 21:58:29,493 autoreload 2976 16060 Watching for file changes with StatReloader
+ERROR 2024-05-21 21:58:36,736 log 2976 16208 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2117, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'QuerySet'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 47, in add_order
+    order.products.add(product)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1201, in add
+    self._add_items(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1461, in _add_items
+    target_ids = self._get_target_ids(target_field_name, objs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 1395, in _get_target_ids
+    target_ids.add(target_field.get_prep_value(obj))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\fields\related.py", line 1155, in get_prep_value
+    return self.target_field.get_prep_value(value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2119, in get_prep_value
+    raise e.__class__(
+TypeError: Field 'id' expected a number but got <QuerySet [<Product: name21>]>.
+ERROR 2024-05-21 21:58:36,741 basehttp 2976 16208 "POST /shopapp/order/add/ HTTP/1.1" 500 96190
+INFO 2024-05-21 22:06:14,317 autoreload 2976 16060 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:06:15,203 autoreload 10712 10028 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:06:18,503 log 10712 7564 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(pk=product.id)
+                                  ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2024-05-21 22:06:18,504 basehttp 10712 7564 "POST /shopapp/order/add/ HTTP/1.1" 500 68768
+INFO 2024-05-21 22:06:34,331 autoreload 10712 10028 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:06:35,110 autoreload 11676 7440 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:06:37,108 log 11676 11692 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(pk=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 360, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR 2024-05-21 22:06:37,112 basehttp 11676 11692 "POST /shopapp/order/add/ HTTP/1.1" 500 125803
+INFO 2024-05-21 22:09:29,323 autoreload 11676 7440 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:09:30,151 autoreload 11100 4072 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:09:57,429 log 11100 12816 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(product__id=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'product' into field. Choices are: data_enter, description, id, image, name, order, price, quantity
+ERROR 2024-05-21 22:09:57,431 basehttp 11100 12816 "POST /shopapp/order/add/ HTTP/1.1" 500 120988
+INFO 2024-05-21 22:26:30,423 autoreload 11100 4072 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-21 22:26:31,311 autoreload 13416 10340 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:26:33,779 log 13416 17412 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(product__id=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1495, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1307, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1772, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'product' into field. Choices are: data_enter, description, id, image, name, order, price, quantity
+ERROR 2024-05-21 22:26:33,783 basehttp 13416 17412 "POST /shopapp/order/add/ HTTP/1.1" 500 120988
+INFO 2024-05-21 22:32:27,764 autoreload 13416 10340 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:32:28,397 autoreload 6712 16792 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:32:33,780 log 6712 8280 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(id=product.pk)
+                                  ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+ERROR 2024-05-21 22:32:33,796 basehttp 6712 8280 "POST /shopapp/order/add/ HTTP/1.1" 500 68768
+INFO 2024-05-21 22:32:44,415 autoreload 6712 16792 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:32:45,223 autoreload 3528 10852 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:32:48,506 log 3528 16516 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(pk=product.pk)
+                                  ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+ERROR 2024-05-21 22:32:48,507 basehttp 3528 16516 "POST /shopapp/order/add/ HTTP/1.1" 500 68768
+INFO 2024-05-21 22:33:13,688 autoreload 3528 10852 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:33:14,411 autoreload 16552 11016 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:33:15,895 log 16552 16864 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(id=product.id)
+                                  ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+ERROR 2024-05-21 22:33:15,897 basehttp 16552 16864 "POST /shopapp/order/add/ HTTP/1.1" 500 68768
+INFO 2024-05-21 22:34:15,533 autoreload 16552 11016 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:34:16,309 autoreload 12524 6012 Watching for file changes with StatReloader
+ERROR 2024-05-21 22:34:16,979 log 12524 2864 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in add_order
+    prod = Product.objects.get(id=product)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 635, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1613, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1645, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1559, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\query.py", line 1389, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\lookups.py", line 360, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+ERROR 2024-05-21 22:34:16,984 basehttp 12524 2864 "POST /shopapp/order/add/ HTTP/1.1" 500 125803
+INFO 2024-05-21 22:42:44,603 autoreload 12524 6012 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:42:45,307 autoreload 17312 8456 Watching for file changes with StatReloader
+INFO 2024-05-21 22:43:35,144 autoreload 17312 8456 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-21 22:43:35,989 autoreload 13976 6016 Watching for file changes with StatReloader
+INFO 2024-05-22 18:23:15,136 autoreload 15088 12844 Watching for file changes with StatReloader
+WARNING 2024-05-22 18:23:20,524 log 15088 13632 Not Found: /
+WARNING 2024-05-22 18:23:20,525 basehttp 15088 13632 "GET / HTTP/1.1" 404 2274
+WARNING 2024-05-22 18:23:20,657 log 15088 13632 Not Found: /favicon.ico
+WARNING 2024-05-22 18:23:20,668 basehttp 15088 13632 "GET /favicon.ico HTTP/1.1" 404 2325
+INFO 2024-05-22 18:23:30,931 basehttp 15088 19228 "GET /shopapp/ HTTP/1.1" 200 31
+INFO 2024-05-22 18:23:37,245 basehttp 15088 19228 "GET /shopapp/order/add/ HTTP/1.1" 200 4707
+INFO 2024-05-22 18:23:43,654 basehttp 15088 19228 "POST /shopapp/order/add/ HTTP/1.1" 200 4717
+INFO 2024-05-22 18:23:55,321 basehttp 15088 19228 "POST /shopapp/order/add/ HTTP/1.1" 200 4717
+INFO 2024-05-22 18:24:14,974 autoreload 15088 12844 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 18:24:16,299 autoreload 11560 16144 Watching for file changes with StatReloader
+ERROR 2024-05-22 18:35:07,835 log 11560 16620 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 38, in add_order
+    order.save()
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1835, in execute_sql
+    self.connection.ops.fetch_returned_insert_columns(
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\backends\base\operations.py", line 216, in fetch_returned_insert_columns
+    return cursor.fetchone()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 97, in inner
+    with self:
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\db\utils.py", line 98, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: database is locked
+ERROR 2024-05-22 18:35:07,864 basehttp 11560 16620 "POST /shopapp/order/add/ HTTP/1.1" 500 128118
+INFO 2024-05-22 18:35:28,241 autoreload 11560 16144 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\forms.py changed, reloading.
+INFO 2024-05-22 18:35:30,055 autoreload 664 1120 Watching for file changes with StatReloader
+INFO 2024-05-22 18:36:48,374 autoreload 10696 19020 Watching for file changes with StatReloader
+INFO 2024-05-22 18:36:53,342 basehttp 10696 18740 "POST /shopapp/order/add/ HTTP/1.1" 302 0
+WARNING 2024-05-22 18:36:53,358 log 10696 18740 Not Found: /
+WARNING 2024-05-22 18:36:53,358 basehttp 10696 18740 "GET / HTTP/1.1" 404 2274
+INFO 2024-05-22 18:37:08,833 basehttp 10696 18740 "GET /shopapp/order/add/ HTTP/1.1" 200 4707
+INFO 2024-05-22 18:37:18,318 basehttp 10696 18740 "POST /shopapp/order/add/ HTTP/1.1" 302 0
+WARNING 2024-05-22 18:37:18,336 log 10696 18740 Not Found: /
+WARNING 2024-05-22 18:37:18,336 basehttp 10696 18740 "GET / HTTP/1.1" 404 2274
+INFO 2024-05-22 18:38:03,441 autoreload 10696 19020 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 18:38:04,527 autoreload 10100 16000 Watching for file changes with StatReloader
+ERROR 2024-05-22 18:38:06,314 log 10100 15920 Internal Server Error: /shopapp/order/add/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 51, in add_order
+    return redirect("#")
+           ^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\urls\resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for '#' not found. '#' is not a valid view function or pattern name.
+ERROR 2024-05-22 18:38:06,320 basehttp 10100 15920 "POST /shopapp/order/add/ HTTP/1.1" 500 86696
+INFO 2024-05-22 18:38:18,108 basehttp 10100 15920 "GET /shopapp/order/add/ HTTP/1.1" 200 4707
+INFO 2024-05-22 18:38:46,595 autoreload 10100 16000 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 18:38:48,054 autoreload 10840 17620 Watching for file changes with StatReloader
+INFO 2024-05-22 18:38:48,526 basehttp 10840 14216 "POST /shopapp/order/add/ HTTP/1.1" 302 0
+WARNING 2024-05-22 18:38:48,568 log 10840 14216 Not Found: /shopapp/order/add/shopapp.html
+WARNING 2024-05-22 18:38:48,568 basehttp 10840 14216 "GET /shopapp/order/add/shopapp.html HTTP/1.1" 404 3195
+INFO 2024-05-22 18:39:07,921 autoreload 10840 17620 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 18:39:09,368 autoreload 16428 8576 Watching for file changes with StatReloader
+INFO 2024-05-22 18:39:09,709 basehttp 16428 6552 "POST /shopapp/order/add/ HTTP/1.1" 302 0
+WARNING 2024-05-22 18:39:09,732 log 16428 6552 Not Found: /shopapp/order/add/index.html
+WARNING 2024-05-22 18:39:09,732 basehttp 16428 6552 "GET /shopapp/order/add/index.html HTTP/1.1" 404 3189
+INFO 2024-05-22 18:39:24,876 autoreload 16428 8576 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 18:39:26,361 autoreload 14584 14284 Watching for file changes with StatReloader
+INFO 2024-05-22 18:39:26,816 basehttp 14584 10984 "POST /shopapp/order/add/ HTTP/1.1" 302 0
+INFO 2024-05-22 18:39:26,820 basehttp 14584 10984 "GET /shopapp/ HTTP/1.1" 200 31
+WARNING 2024-05-22 18:40:46,271 log 14584 10984 Not Found: /shopapp/add/user
+WARNING 2024-05-22 18:40:46,271 basehttp 14584 10984 "GET /shopapp/add/user HTTP/1.1" 404 3153
+INFO 2024-05-22 18:43:01,952 autoreload 14584 14284 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-22 18:43:03,146 autoreload 11580 420 Watching for file changes with StatReloader
+INFO 2024-05-22 18:43:55,888 autoreload 11580 420 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-22 18:43:57,064 autoreload 4104 10300 Watching for file changes with StatReloader
+INFO 2024-05-22 18:43:57,519 basehttp 4104 8304 "GET /shopapp/add_client/ HTTP/1.1" 200 1188
+ERROR 2024-05-22 18:44:31,831 log 4104 8304 Internal Server Error: /shopapp/add_client/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 29, in add_client
+    user = form.save()
+           ^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\models.py", line 543, in save
+    raise ValueError(
+ValueError: The Client could not be created because the data didn't validate.
+ERROR 2024-05-22 18:44:31,839 basehttp 4104 8304 "POST /shopapp/add_client/ HTTP/1.1" 500 72106
+ERROR 2024-05-22 18:45:03,438 log 4104 8304 Internal Server Error: /shopapp/add_client/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 29, in add_client
+    user = form.save()
+           ^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\forms\models.py", line 543, in save
+    raise ValueError(
+ValueError: The Client could not be created because the data didn't validate.
+ERROR 2024-05-22 18:45:03,446 basehttp 4104 8304 "POST /shopapp/add_client/ HTTP/1.1" 500 72106
+INFO 2024-05-22 19:00:27,211 autoreload 4104 10300 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\homeapp\settings.py changed, reloading.
+INFO 2024-05-22 19:00:28,586 autoreload 7868 15876 Watching for file changes with StatReloader
+INFO 2024-05-22 19:01:52,952 autoreload 7868 15876 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 19:01:53,998 autoreload 4072 7384 Watching for file changes with StatReloader
+INFO 2024-05-22 19:03:10,333 autoreload 4072 7384 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 19:03:11,579 autoreload 1784 15656 Watching for file changes with StatReloader
+INFO 2024-05-22 19:03:17,628 basehttp 1784 15720 "GET /shopapp/add_client/ HTTP/1.1" 200 1188
+INFO 2024-05-22 19:03:20,148 basehttp 1784 15720 "GET /shopapp/add_client/ HTTP/1.1" 200 1188
+INFO 2024-05-22 19:04:39,984 basehttp 1784 15720 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:04:41,757 basehttp 1784 15720 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:04:42,615 basehttp 1784 15720 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:04:43,410 basehttp 1784 15720 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:05:38,023 autoreload 9788 1344 Watching for file changes with StatReloader
+INFO 2024-05-22 19:05:41,364 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:05:43,564 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:05:51,218 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:05:52,325 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
