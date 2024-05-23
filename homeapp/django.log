@@ -3949,3 +3949,234 @@ INFO 2024-05-22 19:05:41,364 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/
 INFO 2024-05-22 19:05:43,564 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
 INFO 2024-05-22 19:05:51,218 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
 INFO 2024-05-22 19:05:52,325 basehttp 9788 13736 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:10:44,143 autoreload 12660 12716 Watching for file changes with StatReloader
+INFO 2024-05-22 19:10:47,887 basehttp 12660 716 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:24:48,814 autoreload 12660 12716 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 19:24:50,067 autoreload 18212 10912 Watching for file changes with StatReloader
+INFO 2024-05-22 19:27:46,267 autoreload 18212 10912 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 19:27:47,239 autoreload 4056 14584 Watching for file changes with StatReloader
+INFO 2024-05-22 19:29:27,376 autoreload 4056 14584 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 19:29:28,373 autoreload 15064 3540 Watching for file changes with StatReloader
+INFO 2024-05-22 19:29:55,022 autoreload 14864 12956 Watching for file changes with StatReloader
+INFO 2024-05-22 19:31:04,637 autoreload 14864 12956 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-22 19:31:05,647 autoreload 1820 8324 Watching for file changes with StatReloader
+INFO 2024-05-22 19:36:17,031 autoreload 1820 8324 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 19:36:17,991 autoreload 15180 3924 Watching for file changes with StatReloader
+INFO 2024-05-22 19:42:28,057 basehttp 15180 5516 "GET /shopapp/add_client/ HTTP/1.1" 200 1218
+INFO 2024-05-22 19:43:26,878 autoreload 15180 3924 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\models.py changed, reloading.
+INFO 2024-05-22 19:43:28,088 autoreload 1652 11416 Watching for file changes with StatReloader
+INFO 2024-05-22 19:43:28,421 basehttp 1652 18492 "GET /shopapp/add_client/ HTTP/1.1" 200 1363
+INFO 2024-05-22 19:44:17,956 basehttp 1652 18492 "POST /shopapp/add_client/ HTTP/1.1" 302 0
+INFO 2024-05-22 19:44:17,965 basehttp 1652 18492 "GET /shopapp/ HTTP/1.1" 200 31
+INFO 2024-05-22 20:00:52,351 autoreload 11016 5316 Watching for file changes with StatReloader
+INFO 2024-05-22 20:00:56,390 basehttp 11016 12172 "GET /shopapp/add_client/ HTTP/1.1" 200 1363
+INFO 2024-05-22 20:01:27,582 basehttp 11016 12172 "POST /shopapp/add_client/ HTTP/1.1" 302 0
+INFO 2024-05-22 20:01:27,593 basehttp 11016 12172 "GET /shopapp/ HTTP/1.1" 200 31
+INFO 2024-05-22 20:07:04,410 autoreload 11016 5316 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-22 20:07:05,493 autoreload 4808 9384 Watching for file changes with StatReloader
+INFO 2024-05-22 20:07:22,650 autoreload 4808 9384 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-22 20:07:23,539 autoreload 5608 13768 Watching for file changes with StatReloader
+INFO 2024-05-22 20:07:37,508 autoreload 5608 13768 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-22 20:07:38,394 autoreload 10408 12928 Watching for file changes with StatReloader
+INFO 2024-05-22 20:07:44,067 basehttp 10408 4488 "GET /shopapp/add_client/ HTTP/1.1" 200 1363
+INFO 2024-05-22 20:07:45,448 basehttp 10408 4488 "POST /shopapp/add_client/ HTTP/1.1" 302 0
+INFO 2024-05-22 20:07:45,456 basehttp 10408 4488 "GET /shopapp/ HTTP/1.1" 200 31
+INFO 2024-05-22 20:08:44,200 basehttp 10408 4488 "GET /shopapp/add_client/ HTTP/1.1" 200 1363
+INFO 2024-05-22 20:08:51,710 basehttp 10408 4488 "POST /shopapp/add_client/ HTTP/1.1" 302 0
+INFO 2024-05-22 20:08:51,720 basehttp 10408 4488 "GET /shopapp/ HTTP/1.1" 200 31
+INFO 2024-05-23 19:35:27,118 autoreload 10432 9204 Watching for file changes with StatReloader
+WARNING 2024-05-23 19:35:32,593 log 10432 9172 Not Found: /favicon.ico
+WARNING 2024-05-23 19:35:32,593 log 10432 3080 Not Found: /
+WARNING 2024-05-23 19:35:32,593 basehttp 10432 9172 "GET /favicon.ico HTTP/1.1" 404 2325
+WARNING 2024-05-23 19:35:32,593 basehttp 10432 3080 "GET / HTTP/1.1" 404 2274
+INFO 2024-05-23 19:35:47,510 basehttp 10432 12500 "GET /shopapp/ HTTP/1.1" 200 31
+WARNING 2024-05-23 19:35:56,611 log 10432 12500 Not Found: /shopapp/home
+WARNING 2024-05-23 19:35:56,611 basehttp 10432 12500 "GET /shopapp/home HTTP/1.1" 404 3141
+INFO 2024-05-23 19:37:06,240 autoreload 10432 9204 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-23 19:37:06,860 autoreload 4372 14612 Watching for file changes with StatReloader
+INFO 2024-05-23 19:37:09,082 basehttp 4372 13112 "GET /shopapp/home HTTP/1.1" 301 0
+ERROR 2024-05-23 19:37:09,161 log 4372 12944 Internal Server Error: /shopapp/home/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 47, in client_image
+    return render(request, 'home.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+ERROR 2024-05-23 19:37:09,161 basehttp 4372 12944 "GET /shopapp/home/ HTTP/1.1" 500 82297
+INFO 2024-05-23 19:37:56,043 autoreload 4372 14612 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-23 19:37:56,714 autoreload 264 18856 Watching for file changes with StatReloader
+INFO 2024-05-23 19:37:57,253 basehttp 264 3928 "GET /shopapp/home/ HTTP/1.1" 200 492
+ERROR 2024-05-23 19:38:04,684 log 264 3928 Internal Server Error: /shopapp/home/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py", line 46, in client_image
+    return render(request, 'home.html', {'file_url': file_url})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: home.html
+ERROR 2024-05-23 19:38:04,687 basehttp 264 3928 "POST /shopapp/home/ HTTP/1.1" 500 84292
+INFO 2024-05-23 19:39:49,653 basehttp 264 3928 "GET /shopapp/home/ HTTP/1.1" 200 529
+INFO 2024-05-23 19:55:10,941 autoreload 264 18856 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-23 19:55:11,669 autoreload 2092 8156 Watching for file changes with StatReloader
+INFO 2024-05-23 20:02:05,444 autoreload 2092 8156 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-23 20:02:05,973 autoreload 18768 4772 Watching for file changes with StatReloader
+INFO 2024-05-23 20:02:11,243 basehttp 18768 18192 "GET /shopapp/home/ HTTP/1.1" 200 524
+ERROR 2024-05-23 20:02:21,031 log 18768 18192 Internal Server Error: /shopapp/home/user
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_user.html
+ERROR 2024-05-23 20:02:21,031 basehttp 18768 18192 "GET /shopapp/home/user HTTP/1.1" 500 81671
+INFO 2024-05-23 20:10:12,293 autoreload 18768 4772 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-23 20:10:12,928 autoreload 11116 5312 Watching for file changes with StatReloader
+WARNING 2024-05-23 20:10:29,132 log 11116 12676 Not Found: /shopapp/yspex
+WARNING 2024-05-23 20:10:29,136 basehttp 11116 12676 "GET /shopapp/yspex HTTP/1.1" 404 3504
+WARNING 2024-05-23 20:10:36,278 log 11116 12676 Not Found: /shopapp/yspeh
+WARNING 2024-05-23 20:10:36,279 basehttp 11116 12676 "GET /shopapp/yspeh HTTP/1.1" 404 3504
+INFO 2024-05-23 20:10:45,393 basehttp 11116 12676 "GET /shopapp/YSPEH HTTP/1.1" 301 0
+ERROR 2024-05-23 20:10:45,431 log 11116 15048 Internal Server Error: /shopapp/YSPEH/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_user.html
+ERROR 2024-05-23 20:10:45,446 basehttp 11116 15048 "GET /shopapp/YSPEH/ HTTP/1.1" 500 81644
+INFO 2024-05-23 20:13:58,189 autoreload 11116 5312 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-23 20:13:58,774 autoreload 8004 80 Watching for file changes with StatReloader
+WARNING 2024-05-23 20:14:12,275 log 8004 17032 Not Found: /shopapp/uspeh
+WARNING 2024-05-23 20:14:12,275 basehttp 8004 17032 "GET /shopapp/uspeh HTTP/1.1" 404 3486
+WARNING 2024-05-23 20:14:30,487 log 8004 17032 Not Found: /shopapp/uspeh
+WARNING 2024-05-23 20:14:30,487 basehttp 8004 17032 "GET /shopapp/uspeh HTTP/1.1" 404 3486
+INFO 2024-05-23 20:14:30,521 autoreload 8004 80 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-23 20:14:31,162 autoreload 880 17044 Watching for file changes with StatReloader
+INFO 2024-05-23 20:14:33,353 basehttp 880 8184 "GET /shopapp/uspeh HTTP/1.1" 301 0
+ERROR 2024-05-23 20:14:33,381 log 880 13380 Internal Server Error: /shopapp/uspeh/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_user.html
+ERROR 2024-05-23 20:14:33,381 basehttp 880 13380 "GET /shopapp/uspeh/ HTTP/1.1" 500 81781
+INFO 2024-05-23 20:21:40,446 autoreload 880 17044 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\homeapp\settings.py changed, reloading.
+INFO 2024-05-23 20:22:40,698 autoreload 13648 5768 Watching for file changes with StatReloader
+ERROR 2024-05-23 20:22:44,778 log 13648 5184 Internal Server Error: /shopapp/uspeh/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_user.html
+ERROR 2024-05-23 20:22:44,778 basehttp 13648 5184 "GET /shopapp/uspeh/ HTTP/1.1" 500 82227
+INFO 2024-05-23 20:24:54,447 autoreload 13648 5768 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-23 20:24:55,507 autoreload 19240 12500 Watching for file changes with StatReloader
+ERROR 2024-05-23 20:24:55,909 log 19240 7644 Internal Server Error: /shopapp/uspeh/
+Traceback (most recent call last):
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: add_user.html
+ERROR 2024-05-23 20:24:55,912 basehttp 19240 7644 "GET /shopapp/uspeh/ HTTP/1.1" 500 82227
+INFO 2024-05-23 20:25:26,316 basehttp 19240 7644 "GET /shopapp/add_user HTTP/1.1" 301 0
+INFO 2024-05-23 20:25:26,390 basehttp 19240 19176 "GET /shopapp/add_user/ HTTP/1.1" 200 1363
+INFO 2024-05-23 20:26:05,056 basehttp 19240 19176 "POST /shopapp/add_user/ HTTP/1.1" 302 0
+INFO 2024-05-23 20:26:05,060 basehttp 19240 19176 "GET /shopapp/ HTTP/1.1" 200 31
+INFO 2024-05-23 20:26:31,160 autoreload 19240 12500 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\views.py changed, reloading.
+INFO 2024-05-23 20:26:31,867 autoreload 4104 12604 Watching for file changes with StatReloader
+INFO 2024-05-23 20:27:12,113 autoreload 4104 12604 C:\Users\pugac\OneDrive\Рабочий стол\IT\Python\gjango_hw\homeapp\shopapp\urls.py changed, reloading.
+INFO 2024-05-23 20:27:12,798 autoreload 17256 13816 Watching for file changes with StatReloader
+INFO 2024-05-23 20:27:13,081 basehttp 17256 10248 "GET /shopapp/add_user/ HTTP/1.1" 200 1363

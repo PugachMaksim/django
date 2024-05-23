@@ -5,6 +5,7 @@ from datetime import timedelta
 from django.core.files.storage import FileSystemStorage
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
+from django.views.generic import CreateView
 
 from .forms import OrderAdd, AddUser
 from .models import Client, Product, Order
@@ -26,17 +27,46 @@ def index(response):
 
 
 def add_client(request):
-    if request.method == "POST":
+    if request.method == 'POST':
         form = AddUser(request.POST, request.FILES)
         if form.is_valid():
-            image = form.cleaned_data['image']
-            fs = FileSystemStorage()
-            fs.save(image.name, image)
-            user = form.save()
-            return redirect("/")
+            client = form.save()
+            client.save()
+        return redirect('index')
     else:
         form = AddUser()
-    return render(request, 'shopapp/add_user.html', {'form': form})
+    return render(request, 'shopapp/update_client.html', {'form': form})
+
+
+# def client_image(request):
+#     if request.method == 'POST' and request.FILES:
+#         file = request.FILES['image']
+#         fs = FileSystemStorage()
+#         filename = fs.save(file.name, file)
+#         file_url = fs.url(filename)
+#         return render(request, 'home.html', {'file_url': file_url})
+#     return render(request, 'shopapp/home.html')
+
+
+class AddClient(CreateView):
+    model = Client
+    form_class = AddUser
+    extra_context = {"clients": Client.objects.all()}  #Вывод всех записей
+    template_name = 'add_user.html' # Шаблон на ввод данных
+    success_url = '/uspeh/' #Куда перенаправляется после успешной записи
+
+
+
+# def add_client_image(request, client_id):
+#     client = Client.objects.get(id=client_id)
+#     if request.method == 'POST':
+#         form = AddUser(request.POST, request.FILES, instance=client)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('index')
+#     else:
+#         form = AddUser(instance=client)
+#     return render(request, 'update_client.html', {'form': form, 'client': client})
 
 
 def add_product(request):

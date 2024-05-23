@@ -36,6 +36,7 @@ class Client(models.Model):
     tel_number = models.IntegerField(blank=False)
     adres = models.CharField(max_length=200)
     data_registr = models.DateTimeField(blank=False)
+    image = models.ImageField(upload_to='client_images', default=None)
 
     def __str__(self):
         return self.name
