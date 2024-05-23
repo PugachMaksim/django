@@ -35,8 +35,8 @@ class Client(models.Model):
     mail = models.EmailField(blank=False)
     tel_number = models.IntegerField(blank=False)
     adres = models.CharField(max_length=200)
-    data_registr = models.DateTimeField(blank=False)
-    image = models.ImageField(upload_to='client_images', default=None)
+    data_registr = models.DateTimeField(auto_now=True)
+    image = models.ImageField(upload_to='photo/%Y/%m/%d', default=None, verbose_name="Фото")
 
     def __str__(self):
         return self.name

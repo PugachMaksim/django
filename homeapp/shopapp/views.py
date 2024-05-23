@@ -30,8 +30,7 @@ def add_client(request):
     if request.method == 'POST':
         form = AddUser(request.POST, request.FILES)
         if form.is_valid():
-            client = form.save()
-            client.save()
+            form.save()
         return redirect('index')
     else:
         form = AddUser()
@@ -48,12 +47,15 @@ def add_client(request):
 #     return render(request, 'shopapp/home.html')
 
 
-class AddClient(CreateView):
-    model = Client
-    form_class = AddUser
-    extra_context = {"clients": Client.objects.all()}  #Вывод всех записей
-    template_name = 'add_user.html' # Шаблон на ввод данных
-    success_url = '/uspeh/' #Куда перенаправляется после успешной записи
+# class AddClient(CreateView):
+#     model = Client
+#     form_class = AddUser
+#     extra_context = {"clients": Client.objects.all()}  #Вывод всех записей
+#     template_name = 'shopapp/add_user.html' # Шаблон на ввод данных
+#     success_url = '/success/'
+#     def form_valid(self, form):
+#         Client.objects.create(**form.cleaned_data)
+#         return redirect(self.get_success_url())
 
 
 
@@ -88,26 +90,6 @@ def add_order(request):
     else:
         form = OrderAdd()
     return render(request, 'shopapp/add_orders.html', {'form': form})
-
-
-# def add_order(request):
-#     if request.method == 'POST':
-#         form = OrderAdd(request.POST)
-#         if form.is_valid():
-#             customer = form.cleaned_data['customer']
-#             product = form.cleaned_data['products']
-#             quantity = form.cleaned_data['quantity']
-#             # total_price = form.cleaned_data['total_price']
-#             order = Order(customer=customer, quantity=quantity)
-#             # form.save()
-#             order.save()
-#             # prod = get_object_or_404(Product, name=product)
-#             prod = Product.objects.get(id=product)
-#             order.products.add(prod)
-#             return redirect("/")
-#     else:
-#         form = OrderAdd()
-#     return render(request, 'shopapp/add_orders.html', {'form': form})
 
 
 def client_orders(request, client_id):
