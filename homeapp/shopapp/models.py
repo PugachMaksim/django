@@ -48,7 +48,7 @@ class Product(models.Model):
     image = models.ImageField(upload_to='product_images', default=None)
     price = models.DecimalField(blank=False, default=0, decimal_places=2, max_digits=10)
     quantity = models.IntegerField(blank=False, default=0)
-    data_enter = models.DateTimeField(blank=False)
+    data_enter = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
