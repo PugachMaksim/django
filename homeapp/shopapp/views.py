@@ -14,16 +14,8 @@ from django.utils import timezone
 logger = logging.getLogger(__name__)
 
 
-def index(response):
-    return HttpResponse("Добро пожаловать")
-
-
-# def add_client(request):
-#     for i in range(50):
-#         client = Client(name=f'name{i}', mail=f'email{i}@mail.ru', tel_number=81234567890 + i,
-#                         adres=f'Спб, 3-я улица строителей д 12 кв {i}', data_registr=f'2024-05-12')
-#         client.save()
-#     return HttpResponse("Клиенты добавлены")
+def index(request):
+    return render(request, 'shopapp/index.html')
 
 
 def add_client(request):
@@ -35,40 +27,6 @@ def add_client(request):
     else:
         form = AddUser()
     return render(request, 'shopapp/update_client.html', {'form': form})
-
-
-# def client_image(request):
-#     if request.method == 'POST' and request.FILES:
-#         file = request.FILES['image']
-#         fs = FileSystemStorage()
-#         filename = fs.save(file.name, file)
-#         file_url = fs.url(filename)
-#         return render(request, 'home.html', {'file_url': file_url})
-#     return render(request, 'shopapp/home.html')
-
-
-# class AddClient(CreateView):
-#     model = Client
-#     form_class = AddUser
-#     extra_context = {"clients": Client.objects.all()}  #Вывод всех записей
-#     template_name = 'shopapp/add_user.html' # Шаблон на ввод данных
-#     success_url = '/success/'
-#     def form_valid(self, form):
-#         Client.objects.create(**form.cleaned_data)
-#         return redirect(self.get_success_url())
-
-
-
-# def add_client_image(request, client_id):
-#     client = Client.objects.get(id=client_id)
-#     if request.method == 'POST':
-#         form = AddUser(request.POST, request.FILES, instance=client)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('index')
-#     else:
-#         form = AddUser(instance=client)
-#     return render(request, 'update_client.html', {'form': form, 'client': client})
 
 
 def add_product(request):
@@ -93,24 +51,24 @@ def add_order(request):
 
 
 def client_orders(request, client_id):
-    client = Client.objects.get(pk=client_id)
+    # client = Client.objects.get(pk=client_id)
 
     # За последние 7 дней
     last_7_days = timezone.now() - timedelta(days=7)
-    client_orders_last_7_days = Product.objects.filter(order__client=client,
-                                                       order__order_date__gte=last_7_days).distinct()
+    client_orders_last_7_days = Order.objects.filter(customer_id=client_id,
+                                                     date_ordered__gte=last_7_days).distinct()
 
     # За последние 30 дней
     last_30_days = timezone.now() - timedelta(days=30)
-    client_orders_last_30_days = Product.objects.filter(order__client=client,
-                                                        order__order_date__gte=last_30_days).distinct()
+    client_orders_last_30_days = Order.objects.filter(customer_id=client_id,
+                                                      date_ordered__gte=last_30_days).distinct()
 
     # За последние 365 дней
     last_365_days = timezone.now() - timedelta(days=365)
-    client_orders_last_365_days = Product.objects.filter(order__client=client,
-                                                         order__order_date__gte=last_365_days).distinct()
+    client_orders_last_365_days = Order.objects.filter(customer_id=client_id,
+                                                       date_ordered__gte=last_365_days).distinct()
 
-    return render(request, 'hw3_app/client_orders.html', {
+    return render(request, 'shopapp/client_orders.html', {
         'client_orders_last_7_days': client_orders_last_7_days,
         'client_orders_last_30_days': client_orders_last_30_days,
         'client_orders_last_365_days': client_orders_last_365_days,

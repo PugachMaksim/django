@@ -12,7 +12,7 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
@@ -31,9 +31,11 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="857cb392-fc4c-4963-ac42-9618b9c66e13" dataset="main.shopapp_client" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="857cb392-fc4c-4963-ac42-9618b9c66e13" dataset="main.auth_user" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="857cb392-fc4c-4963-ac42-9618b9c66e13" dataset="main.shopapp_order_products" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="857cb392-fc4c-4963-ac42-9618b9c66e13" dataset="main.shopapp_product" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="857cb392-fc4c-4963-ac42-9618b9c66e13" dataset="main.shopapp_order" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="857cb392-fc4c-4963-ac42-9618b9c66e13" dataset="main.django_session" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />

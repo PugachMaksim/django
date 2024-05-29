@@ -61,9 +61,11 @@ class Order(models.Model):
     date_ordered = models.DateTimeField(auto_now_add=True)
     total_price = models.DecimalField(blank=False, default=0, decimal_places=2, max_digits=10)
 
-    # def _get_product_cost(self):
-    #     return self.products.price * self.quantity
+
     def calc_total_price(self, quantity=quantity):
         total = sum(product.price * quantity for product in self.products.all())
         self.total_price = total
         self.save()
+
+    def __str__(self):
+        return self.customer, self.quantity, self.total_price
