@@ -27,7 +27,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['bundy.pythonanywhere.com', ]
+ALLOWED_HOSTS = ['bundy2.pythonanywhere.com', ]
 
 # Application definition
 
@@ -124,10 +124,10 @@ STATIC_ROOT = BASE_DIR / 'static/'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bundy$default',
-        'USER': 'bundy',
+        'NAME': 'bundy2$default',
+        'USER': 'bundy2',
         'PASSWORD': os.getenv('MYSQL_PASSWORD'),
-        'HOST': 'bundy.mysql.pythonanywhere-services.com',
+        'HOST': 'bundy2.mysql.pythonanywhere-services.com',
         'OPTIONS': {
             'init_command': "SET NAMES 'utf8mb4'; SET sql_mode = 'STRICT_TRANS_TABLES'",
                             'charset': 'utf8mb4',
